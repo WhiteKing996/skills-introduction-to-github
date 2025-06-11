@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>习李合影.jpg</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    .marker {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      border: 2px solid white;
+      cursor: pointer;
+    }
+    .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      display: none;
+      font-size: 14px;
+    }
+    .marker:hover + .tooltip {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h2>点击红点查看人物信息</h2>
+  <div class="image-container">
+    <!-- 替换为你自己的图片文件名 -->
+    <img src="习李合影.jpg" alt="人物合影" width="1000" />
+    <!-- 标记点1：习近平-->
+    <a href="page-xi.html" class="marker" style="top: 625px; left: 350px;"></a>
+    <div class="tooltip" style="top: 625px; left: 350px;">习近平</div>
+    <!-- 标记点2：李克强 -->
+    <a href="page-li.html" class="marker" style="top: 640px; left: 555px;"></a>
+    <div class="tooltip" style="top: 640px; left: 555px;">李克强</div>
+<!-- 你可以继续添加更多人物 -->
+<!-- 文字说明区域 -->
+   <div class="description-area">
+  <p>本合影拍摄于 <strong>2018年3月</strong> 十三届全国人大一次会议第六次全体会议期间</p>
+  </div>
+</body>
+</html>
